@@ -262,16 +262,20 @@ body {
   justify-content: center;
   z-index: 2;
   left: -100%;
-  transition: 0.3s; }
+  transition: 0.3s; 
+  position: fixed;}
 
 .active {
   left: 0%;
   transition: 0.3s; }
-
+  .activeButton {
+    position: fixed;
+    right: 32px;
+  }
 .activeButton span:nth-of-type(1) {
-  height: 0;
-  width: 0;
-  transition: 0.3s; }
+ opacity: 0;
+  transition: 0.3s; 
+}
 
 .activeButton span:nth-of-type(2) {
   margin-top: 5px;
